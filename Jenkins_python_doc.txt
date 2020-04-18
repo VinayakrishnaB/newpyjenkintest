@@ -1,0 +1,20 @@
+echo "# MyFirstProc" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/VinayakrishnaB/MyFirstProc.git
+git push -u origin master
+
+To run Python on Jenkins
+
+issue: when i run the python script from my local, i was getting error as Python not recognized. Tried many options but no luck!!
+
+Followed below steps to correct it:
+If your command runs fine on Win command prompt as user 'X', then you should run Jenkins with the same user.
+
+This can be achieved by performing following steps:
+1. Run > services.msc (Enter)
+2. Select Jenkins service. Right-click and select Properties
+3. Click on Log On tab
+4. Select user 'X' and provide credentials
+5. Restart Jenkins.
